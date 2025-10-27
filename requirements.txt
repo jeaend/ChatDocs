@@ -1,6 +1,25 @@
+# --- Core App ---
 streamlit
-langchain
-langchain-google-genai
-google-generativeai
-chromadb
 python-dotenv
+
+# --- LangChain ecosystem ---
+langchain==0.2.17
+langchain-core==0.2.43
+langchain-community==0.2.19
+langchain-text-splitters==0.2.0
+langchain-huggingface  
+
+# --- Gemini (chat / reasoning only) ---
+langchain-google-genai==1.0.10
+google-generativeai
+
+# --- Local Embeddings ---
+sentence-transformers  
+
+# --- Vector Database ---
+chromadb
+
+# --- Document Parsing & Utils ---
+unstructured
+python-magic
+markdown
