@@ -1,4 +1,18 @@
+# Virtual environment
 .venv/
+
+# Environment variables
 .env
+
+# Python cache
 __pycache__/
-*.db
+*.pyc
+
+# Generated data (embeddings, indexes, DB)
+data/
+*.bin
+*.sqlite3
+*.pickle
+
+# macOS metadata
+.DS_Store
