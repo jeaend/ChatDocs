@@ -3,8 +3,7 @@
 **ChatDocs for Loop** is a local AI assistant that helps developers, contributors, and users navigate the open-source [Loop](https://github.com/LoopKit/Loop) diabetes management app documentation.  
 It combines **local embeddings** and **Gemini 2.5 Flash** to deliver accurate, grounded answers -> and tells you when something isn’t in the docs.
 
-
-## 🌟 Why This Project
+## Why This Project
 
 Loop is a powerful open-source app that helps people with diabetes automate insulin delivery.  
 However, its documentation and codebase can be complex to navigate — especially for newcomers.  
@@ -25,7 +24,7 @@ This project demonstrates:
   </a>
 </p>
 
-## 🧠 Example Use Cases
+## Example Use Cases
 
 - “Where does Loop define insulin delivery logic in code?”  
 - “How do I configure a new CGM according to the LoopDocs?”  
@@ -42,17 +41,19 @@ This project demonstrates:
 - **Streamlit interface for developers** — simple, fast, and designed for documentation exploration.  
 ---
 
-## 🧩 Tech Stack
+## Tech Stack
 
-| Component | Purpose |
-|------------|----------|
-| **Gemini API** | LLM reasoning and summarization |
-| **LangChain** | Retrieval-Augmented Generation pipeline |
-| **Chroma** | Local vector database for document embeddings |
-| **Streamlit** | Interactive UI for chatting with docs |
-| **Python** | Core logic and integration |
+| Component                                | Purpose                                                            |
+| ---------------------------------------- | ------------------------------------------------------------------ |
+| **Gemini API**                           | LLM for reasoning, summarization, and answering queries            |
+| **LangChain**                            | Retrieval-Augmented Generation (RAG) pipeline orchestration        |
+| **Chroma**                               | Local vector database for storing and querying document embeddings |
+| **Hugging Face (Sentence Transformers)** | Embedding generation using `all-MiniLM-L6-v2`                      |
+| **Streamlit**                            | Interactive web UI for chatting with documentation                 |
+| **Python**                               | Core logic, environment, and integration scripting                 |
 
-## 🧩 Architecture
+
+## Architecture
 
              ┌───────────────────────┐
              │  LoopDocs Markdown    │
@@ -74,7 +75,7 @@ This project demonstrates:
                      Streamlit Chat UI
 
 
-### 🧰 Developer Commands
+### Developer Commands
 
 | Command             | Description                                         |
 | ------------------- | --------------------------------------------------- |
@@ -85,37 +86,37 @@ This project demonstrates:
 | `make chat`         | Start ChatDocs in CLI mode                          |
 | `make run-ui`       | Launch Streamlit web app                            |
 
-## 🛠️ Setup
+## Setup
 
-### 1️⃣ Clone the repo
+### Step 1 - Clone the repo
 ```bash
 git clone https://github.com/jeaend/ChatDocs.git
 cd ChatDocs
 ```
 
-### 2️⃣ Create the environment
+### Step 2 - Create the environment
 ```bash
 make setup
 ```
 
-### 3️⃣ Add your Gemini API key, see the example .env file for guidance
+### Step 3 - Add your Gemini API key, see the example .env file for guidance
 Create a `.env` file in the root:
 ```bash
 GOOGLE_API_KEY=your_gemini_api_key
 ```
 You can get a key at [https://makersuite.google.com/app/apikey](https://makersuite.google.com/app/apikey)
 
-### 4️⃣ Verify Gemini access
+### Step 4 - Verify Gemini access
 ```bash
 make check-gemini
 ```
 
-### 5️⃣ Build the vector store
+### Step 5 - Build the vector store
 ```bash
 make refresh
 ```
 
-### 6️⃣ Start chatting
+### Step 6 - Start chatting
 **CLI version**
 ```bash
 make chat
@@ -129,7 +130,7 @@ Then open the Streamlit URL (usually `http://localhost:8501`) to start chatting 
 
 
 ---
-## 📚 Project Structure
+## Project Structure
 
 ```
 ChatDocs/
@@ -151,7 +152,7 @@ ChatDocs/
 
 ---
 
-## 🧠 Future Enhancements
+## Future Enhancements
 
 - Multi-source documentation support (adding source code)
 - Deployment to Streamlit Cloud / Hugging Face Spaces  
@@ -160,7 +161,7 @@ ChatDocs/
 ---
 
 
-### 👋 Author
+## Author
 
 *Jeanne Endres* - 
 Data Science & Software Engineer  
