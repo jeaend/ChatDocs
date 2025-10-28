@@ -1,7 +1,10 @@
 # === ChatDocs Automation ===
 # Usage:
+#   make setup   → creates the virtual environment
 #   make refresh   → pulls latest LoopDocs + rebuilds embeddings
+#   make inspect   → inspect the Chroma vector database
 #   make run       → starts Streamlit app
+
 
 PYTHON := .venv/bin/python
 DOCS_DIR := docs
@@ -23,6 +26,10 @@ refresh:
 	@echo "🧠 Rebuilding embeddings..."
 	$(PYTHON) -m utils.loader_docs
 	@echo "✅ Refresh complete."
+
+inspect:
+	@echo "🔍 Inspecting Chroma database..."
+	$(PYTHON) -m utils.inspect_vectors
 
 run:
 	@echo "🚀 Launching ChatDocs Streamlit app..."
