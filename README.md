@@ -21,7 +21,7 @@ This project demonstrates:
 
 <p align="center">
   <a href="https://github.com/jeaend/ChatDocs/raw/main/assets/chatdoc_demo.webm">
-    <img src="https://private-user-images.githubusercontent.com/88771945/506703678-759c6580-d475-4a50-8346-2c769c592931.gif?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjE2NzQxNDIsIm5iZiI6MTc2MTY3Mzg0MiwicGF0aCI6Ii84ODc3MTk0NS81MDY3MDM2NzgtNzU5YzY1ODAtZDQ3NS00YTUwLTgzNDYtMmM3NjljNTkyOTMxLmdpZj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEwMjglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMDI4VDE3NTA0MlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTFmYjQ0ZTVhYzE1NDc4OTIzN2RjNDFiYTgzZWIzNzExYTk5OWNkMTNlNTJmYjQ3ZWYyNTU2NWNlODE1OGNlM2ImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.huHoru0DfbznEaWn2vCwLSXbOblv5gNs8wpQwXqney8" width="850" alt="ChatDocs Demo"/>
+    <img src="https://private-user-images.githubusercontent.com/88771945/506709431-888d7e1d-fdf0-4853-8bd4-c1beadac8a83.gif?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjE2NzQ5MTYsIm5iZiI6MTc2MTY3NDYxNiwicGF0aCI6Ii84ODc3MTk0NS81MDY3MDk0MzEtODg4ZDdlMWQtZmRmMC00ODUzLThiZDQtYzFiZWFkYWM4YTgzLmdpZj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEwMjglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMDI4VDE4MDMzNlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTI3M2VkYzU1NjRiYWZmZTVhYWUxOTQ2N2JmOGZmM2FjNTAxOGQ5YTljZTgzMzA2OWFjOTBiNWY0Zjc5YzY1YWImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.k7SwArmIdRng58VS4HKJcFXU4R7NpBlO5YKFYt7hGZQ" width="75%" alt="ChatDocs Demo"/>
   </a>
 </p>
 
@@ -36,11 +36,9 @@ This project demonstrates:
 
 ## Features
 
-- **Ask questions across Loop’s entire ecosystem** — from user guides in LoopDocs to developer notes in the Loop and LoopKit repos.  
 - **Context-aware answers powered by Gemini + LangChain**, combining human-readable docs and actual source code for deeper reasoning.  
 - **Local and private** — all embeddings, retrieval, and chat run on your machine (no external API calls beyond Gemini).  
-- **Transparent retrieval** — see which document or code file each answer came from.  
-- **Multi-source knowledge base** — integrates Markdown docs, Swift files, and configuration schemas.  
+- **Transparent retrieval** — see which document each answer came from.  
 - **Streamlit interface for developers** — simple, fast, and designed for documentation exploration.  
 ---
 
