@@ -7,7 +7,6 @@
 #   make chat          	→ run the ChatDocs CLI
 #   make run-ui       	→ launch the Streamlit ChatDocs web app
 
-
 PYTHON := .venv/bin/python
 DOCS_DIR := docs
 DATA_DIR := data/loopdocs
@@ -46,3 +45,6 @@ chat:
 	@echo "💬 Starting ChatDocs CLI..."
 	$(PYTHON) -m utils.chat_docs
 
+run-ui:
+	@echo "🚀 Launching ChatDocs Streamlit app..."
+	$(PYTHON) -m streamlit run app.py
