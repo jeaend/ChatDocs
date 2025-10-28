@@ -1,26 +1,26 @@
-# ChatDocs for Loop  
+# 🩺 ChatDocs for Loop  
 
-ChatDocs for Loop is a local AI assistant that helps developers, contributors and users navigate the open-source [Loop](https://github.com/LoopKit/Loop) iOS diabetes management app documentation.  
-It runs entirely locally, using **Gemini** for reasoning and **LangChain** for intelligent retrieval.
+**ChatDocs for Loop** is a local AI assistant that helps developers, contributors, and users navigate the open-source [Loop](https://github.com/LoopKit/Loop) diabetes management app documentation.  
+It combines **local embeddings** and **Gemini 2.5 Flash** to deliver accurate, grounded answers -> and tells you when something isn’t in the docs.
 
 
 ## 🌟 Why This Project
 
 Loop is a powerful open-source app that helps people with diabetes automate insulin delivery.  
-However, its documentation and codebase can be complex to navigate; especially for newbies.  
+However, its documentation and codebase can be complex to navigate — especially for newcomers.  
 
-**ChatDocs** was built to bridge that gap: a local, Gemini-powered assistant that helps developers and contributors explore the Loop documentation and repositories conversationally.
+**ChatDocs** was built to bridge that gap: a **local, Gemini-powered assistant** that helps developers and contributors explore the Loop documentation and repositories conversationally.
 
 This project demonstrates:
 - Practical application of **LLMs (Gemini)** for technical documentation understanding  
-- Implementation of a **Retrieval-Augmented Generation (RAG)** pipeline over mixed sources (Markdown + code)  
-- Thoughtful UX for **developer productivity and knowledge exploration**
+- Implementation of a **Retrieval-Augmented Generation (RAG)** pipeline  
+- Thoughtful UX for **developer productivity and knowledge exploration** using Makefile  
+
   
 ## Demo
 
 Coming soon — a short walkthrough showing ChatDocs exploring LoopDocs and LoopKit repositories.
 
----
 
 ## 🧠 Example Use Cases
 
@@ -51,62 +51,81 @@ Coming soon — a short walkthrough showing ChatDocs exploring LoopDocs and Loop
 | **Streamlit** | Interactive UI for chatting with docs |
 | **Python** | Core logic and integration |
 
----
+## 🧩 Architecture
 
-## ⚙️ Setup
+             ┌───────────────────────┐
+             │  LoopDocs Markdown    │
+             └────────────┬──────────┘
+                          │
+                   Load & Split Docs
+                          │
+               Embed with HuggingFace
+                          │
+                  Store in Chroma DB
+                          │
+                     Retrieve Context
+                          │
+        ┌─────────────────┴─────────────────┐
+        │      ChatGoogleGenerativeAI       │
+        │         (Gemini 2.5 Flash)        │
+        └─────────────────┬─────────────────┘
+                          │
+                     Streamlit Chat UI
 
-### 1. Clone the repo
+
+### 🧰 Developer Commands
+
+| Command             | Description                                         |
+| ------------------- | --------------------------------------------------- |
+| `make check-gemini` | Verify your Gemini API key and accessible models    |
+| `make setup`        | Create virtual environment and install dependencies |
+| `make refresh`      | Pull latest LoopDocs and rebuild embeddings         |
+| `make inspect`      | Inspect Chroma vector database                      |
+| `make chat`         | Start ChatDocs in CLI mode                          |
+| `make run-ui`       | Launch Streamlit web app                            |
+
+## 🛠️ Setup
+
+### 1️⃣ Clone the repo
 ```bash
 git clone https://github.com/jeaend/ChatDocs.git
 cd ChatDocs
 ```
 
-### 🧰 Developer Commands
-
-| Command | Description |
-|----------|-------------|
-| `make setup` | Create local Python environment |
-| `make refresh` | Pull latest docs and rebuild embeddings |
-| `make run` | Launch Streamlit app locally |
-
-Usage
-# 1. Setup once (creates .venv)
+### 2️⃣ Create the environment
+```bash
 make setup
+```
 
-# 2. Rebuild embeddings and pull latest docs
-make refresh
-
-# 3. Run the Streamlit app
-make run
-
-### 2. Create a virtual environment
+### 3️⃣ Add your Gemini API key, see the example .env file for guidance
+Create a `.env` file in the root:
 ```bash
-python3 -m venv .venv
-source .venv/bin/activate
-```
-
-### 3. Install dependencies
-```bash
-pip install --upgrade pip
-pip install -r requirements.txt
-```
-
-### 4. Add your Gemini API key
-Create a `.env` file in the project root:
-```
-GEMINI_API_KEY=your_api_key_here
+GOOGLE_API_KEY=your_gemini_api_key
 ```
 You can get a key at [https://makersuite.google.com/app/apikey](https://makersuite.google.com/app/apikey)
 
----
-
-## ▶️ Run the App
-
+### 4️⃣ Verify Gemini access
 ```bash
-streamlit run app.py
+make check-gemini
 ```
 
+### 5️⃣ Build the vector store
+```bash
+make refresh
+```
+
+### 6️⃣ Start chatting
+**CLI version**
+```bash
+make chat
+```
+
+**Streamlit UI**
+```bash
+make run-ui
+```
 Then open the Streamlit URL (usually `http://localhost:8501`) to start chatting with the Loop docs.
+
 
 ---
 ## 📚 Project Structure
@@ -130,6 +149,15 @@ ChatDocs/
 ```
 
 ---
+
+## 🧠 Future Enhancements
+
+- Multi-source documentation support (adding source code)
+- Deployment to Streamlit Cloud / Hugging Face Spaces  
+- Option to switch between Gemini, OpenAI, and Claude  
+
+---
+
 
 ### 👋 Author
 
