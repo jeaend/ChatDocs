@@ -19,7 +19,7 @@ This project demonstrates:
 ## Demo
 
 <p align="center">
-  <a href="https://github.com/jeaend/ChatDocs/raw/main/assets/chatdoc_demo.webm">
+  <a href="https://github.com/jeaend/ChatDocs/raw/main/assets/chatdocs_demo.gif">
     <img src="https://private-user-images.githubusercontent.com/88771945/506709431-888d7e1d-fdf0-4853-8bd4-c1beadac8a83.gif?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjE2NzYzODEsIm5iZiI6MTc2MTY3NjA4MSwicGF0aCI6Ii84ODc3MTk0NS81MDY3MDk0MzEtODg4ZDdlMWQtZmRmMC00ODUzLThiZDQtYzFiZWFkYWM4YTgzLmdpZj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEwMjglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMDI4VDE4MjgwMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTIxNzhiZWYyNDU1YjRmOWY3NGMxYzBiMmZmNDc2OWUzZDRkMThmOWI1NDBhMTQyMDZmNWY1N2IwOTJjMjc0MzgmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.nLKSWQlFhe2ywnNPrM9Pj-AIdVqTNGRr9ZYA6OB-zUo" width="75%" alt="ChatDocs Demo"/>
   </a>
 </p>
