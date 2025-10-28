@@ -4,6 +4,16 @@
 #   make run       → starts Streamlit app
 
 PYTHON := .venv/bin/python
+DOCS_DIR := docs
+DATA_DIR := data/loopdocs
+
+setup:
+	@echo "📦 Creating virtual environment..."
+	python3 -m venv .venv
+	@echo "📦 Installing dependencies..."
+	$(PYTHON) -m pip install --upgrade pip
+	$(PYTHON) -m pip install -r requirements.txt
+	@echo "✅ Environment ready!"
 
 refresh:
 	@echo "🔄 Pulling latest LoopDocs..."
