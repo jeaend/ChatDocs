@@ -1,4 +1,4 @@
-# 🩺 ChatDocs for Loop  
+# ChatDocs for Loop  
 
 **ChatDocs for Loop** is a local AI assistant that helps developers, contributors, and users navigate the open-source [Loop](https://github.com/LoopKit/Loop) diabetes management app documentation.  
 It combines **local embeddings** and **Gemini 2.5 Flash** to deliver accurate, grounded answers -> and tells you when something isn’t in the docs.
@@ -19,8 +19,11 @@ This project demonstrates:
   
 ## Demo
 
-Coming soon — a short walkthrough showing ChatDocs exploring LoopDocs and LoopKit repositories.
-
+<p align="center">
+  <a href="https://github.com/jeaend/ChatDocs/raw/main/assets/chatdoc_demo.webm">
+    <img src="https://private-user-images.githubusercontent.com/88771945/506703678-759c6580-d475-4a50-8346-2c769c592931.gif?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjE2NzQxNDIsIm5iZiI6MTc2MTY3Mzg0MiwicGF0aCI6Ii84ODc3MTk0NS81MDY3MDM2NzgtNzU5YzY1ODAtZDQ3NS00YTUwLTgzNDYtMmM3NjljNTkyOTMxLmdpZj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEwMjglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMDI4VDE3NTA0MlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTFmYjQ0ZTVhYzE1NDc4OTIzN2RjNDFiYTgzZWIzNzExYTk5OWNkMTNlNTJmYjQ3ZWYyNTU2NWNlODE1OGNlM2ImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.huHoru0DfbznEaWn2vCwLSXbOblv5gNs8wpQwXqney8" width="850" alt="ChatDocs Demo"/>
+  </a>
+</p>
 
 ## 🧠 Example Use Cases
 
