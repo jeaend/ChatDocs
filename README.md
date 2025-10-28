@@ -61,6 +61,24 @@ git clone https://github.com/jeaend/ChatDocs.git
 cd ChatDocs
 ```
 
+### 🧰 Developer Commands
+
+| Command | Description |
+|----------|-------------|
+| `make setup` | Create local Python environment |
+| `make refresh` | Pull latest docs and rebuild embeddings |
+| `make run` | Launch Streamlit app locally |
+
+Usage
+# 1. Setup once (creates .venv)
+make setup
+
+# 2. Rebuild embeddings and pull latest docs
+make refresh
+
+# 3. Run the Streamlit app
+make run
+
 ### 2. Create a virtual environment
 ```bash
 python3 -m venv .venv

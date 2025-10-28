@@ -1,10 +1,11 @@
 # === ChatDocs Automation ===
 # Usage:
-#   make check-gemini → verify Google API key + Gemini access
-#   make setup   → creates the virtual environment
-#   make refresh   → pulls latest LoopDocs + rebuilds embeddings
-#   make inspect   → inspect the Chroma vector database
-#   make run       → starts Streamlit app
+#   make check-gemini 	→ verify Google API key + Gemini access
+#   make setup   		→ creates the virtual environment
+#   make refresh   		→ pulls latest LoopDocs + rebuilds embeddings
+#   make inspect   		→ inspect the Chroma vector database
+#   make chat          	→ run the ChatDocs CLI
+#   make run-ui       	→ launch the Streamlit ChatDocs web app
 
 
 PYTHON := .venv/bin/python
@@ -15,8 +16,6 @@ DATA_DIR := data/loopdocs
 check-gemini:
 	@echo "🔍 Checking Gemini API key and accessible models..."
 	@$(PYTHON) utils/check_gemini.py
-
-
 
 setup:
 	@echo "📦 Creating virtual environment..."
@@ -42,3 +41,8 @@ inspect:
 run:
 	@echo "🚀 Launching ChatDocs Streamlit app..."
 	$(PYTHON) -m streamlit run app.py
+
+chat:
+	@echo "💬 Starting ChatDocs CLI..."
+	$(PYTHON) -m utils.chat_docs
+
