@@ -7,17 +7,19 @@ langchain==0.2.17
 langchain-core==0.2.43
 langchain-community==0.2.19
 langchain-text-splitters==0.2.0
-langchain-huggingface  
+langchain-huggingface
 
 # --- Gemini (chat / reasoning only) ---
 langchain-google-genai==1.0.10
-google-generativeai
+google-generativeai==0.8.3
+google-ai-generativelanguage==0.6.10
+protobuf<5
 
 # --- Local Embeddings ---
-sentence-transformers  
+sentence-transformers
 
 # --- Vector Database ---
-chromadb
+chromadb>=1.0.20,<2.0.0
 
 # --- Document Parsing & Utils ---
 unstructured
