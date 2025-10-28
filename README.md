@@ -3,7 +3,8 @@
 **ChatDocs for Loop** is a local AI assistant that helps developers, contributors, and users navigate the open-source [Loop](https://github.com/LoopKit/Loop) diabetes management app documentation.  
 It combines **local embeddings** and **Gemini 2.5 Flash** to deliver accurate, grounded answers -> and tells you when something isn’t in the docs.
 
-## Why This Project
+
+## 🌟 Why This Project
 
 Loop is a powerful open-source app that helps people with diabetes automate insulin delivery.  
 However, its documentation and codebase can be complex to navigate — especially for newcomers.  
@@ -20,11 +21,12 @@ This project demonstrates:
 
 <p align="center">
   <a href="https://github.com/jeaend/ChatDocs/raw/main/assets/chatdoc_demo.webm">
-    <img src="https://private-user-images.githubusercontent.com/88771945/506709431-888d7e1d-fdf0-4853-8bd4-c1beadac8a83.gif?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjE2NzQ5MTYsIm5iZiI6MTc2MTY3NDYxNiwicGF0aCI6Ii84ODc3MTk0NS81MDY3MDk0MzEtODg4ZDdlMWQtZmRmMC00ODUzLThiZDQtYzFiZWFkYWM4YTgzLmdpZj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEwMjglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMDI4VDE4MDMzNlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTI3M2VkYzU1NjRiYWZmZTVhYWUxOTQ2N2JmOGZmM2FjNTAxOGQ5YTljZTgzMzA2OWFjOTBiNWY0Zjc5YzY1YWImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.k7SwArmIdRng58VS4HKJcFXU4R7NpBlO5YKFYt7hGZQ" width="75%" alt="ChatDocs Demo"/>
+    <img src="https://private-user-images.githubusercontent.com/88771945/506703678-759c6580-d475-4a50-8346-2c769c592931.gif?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjE2NzQxNDIsIm5iZiI6MTc2MTY3Mzg0MiwicGF0aCI6Ii84ODc3MTk0NS81MDY3MDM2NzgtNzU5YzY1ODAtZDQ3NS00YTUwLTgzNDYtMmM3NjljNTkyOTMxLmdpZj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEwMjglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMDI4VDE3NTA0MlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTFmYjQ0ZTVhYzE1NDc4OTIzN2RjNDFiYTgzZWIzNzExYTk5OWNkMTNlNTJmYjQ3ZWYyNTU2NWNlODE1OGNlM2ImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.huHoru0DfbznEaWn2vCwLSXbOblv5gNs8wpQwXqney8" width="850" alt="ChatDocs Demo"/>
   </a>
 </p>
 
-## Example Use Cases
+
+## 🧠 Example Use Cases
 
 - “Where does Loop define insulin delivery logic in code?”  
 - “How do I configure a new CGM according to the LoopDocs?”  
@@ -35,25 +37,25 @@ This project demonstrates:
 
 ## Features
 
+- **Ask questions across Loop’s entire ecosystem** — from user guides in LoopDocs to developer notes in the Loop and LoopKit repos.  
 - **Context-aware answers powered by Gemini + LangChain**, combining human-readable docs and actual source code for deeper reasoning.  
 - **Local and private** — all embeddings, retrieval, and chat run on your machine (no external API calls beyond Gemini).  
-- **Transparent retrieval** — see which document each answer came from.  
+- **Transparent retrieval** — see which document or code file each answer came from.  
+- **Multi-source knowledge base** — integrates Markdown docs, Swift files, and configuration schemas.  
 - **Streamlit interface for developers** — simple, fast, and designed for documentation exploration.  
 ---
 
-## Tech Stack
+## 🧩 Tech Stack
 
-| Component                                | Purpose                                                            |
-| ---------------------------------------- | ------------------------------------------------------------------ |
-| **Gemini API**                           | LLM for reasoning, summarization, and answering queries            |
-| **LangChain**                            | Retrieval-Augmented Generation (RAG) pipeline orchestration        |
-| **Chroma**                               | Local vector database for storing and querying document embeddings |
-| **Hugging Face (Sentence Transformers)** | Embedding generation using `all-MiniLM-L6-v2`                      |
-| **Streamlit**                            | Interactive web UI for chatting with documentation                 |
-| **Python**                               | Core logic, environment, and integration scripting                 |
+| Component | Purpose |
+|------------|----------|
+| **Gemini API** | LLM reasoning and summarization |
+| **LangChain** | Retrieval-Augmented Generation pipeline |
+| **Chroma** | Local vector database for document embeddings |
+| **Streamlit** | Interactive UI for chatting with docs |
+| **Python** | Core logic and integration |
 
-
-## Architecture
+## 🧩 Architecture
 
              ┌───────────────────────┐
              │  LoopDocs Markdown    │
@@ -75,7 +77,7 @@ This project demonstrates:
                      Streamlit Chat UI
 
 
-### Developer Commands
+### 🧰 Developer Commands
 
 | Command             | Description                                         |
 | ------------------- | --------------------------------------------------- |
@@ -86,37 +88,37 @@ This project demonstrates:
 | `make chat`         | Start ChatDocs in CLI mode                          |
 | `make run-ui`       | Launch Streamlit web app                            |
 
-## Setup
+## 🛠️ Setup
 
-### Step 1 - Clone the repo
+### 1️⃣ Clone the repo
 ```bash
 git clone https://github.com/jeaend/ChatDocs.git
 cd ChatDocs
 ```
 
-### Step 2 - Create the environment
+### 2️⃣ Create the environment
 ```bash
 make setup
 ```
 
-### Step 3 - Add your Gemini API key, see the example .env file for guidance
+### 3️⃣ Add your Gemini API key, see the example .env file for guidance
 Create a `.env` file in the root:
 ```bash
 GOOGLE_API_KEY=your_gemini_api_key
 ```
 You can get a key at [https://makersuite.google.com/app/apikey](https://makersuite.google.com/app/apikey)
 
-### Step 4 - Verify Gemini access
+### 4️⃣ Verify Gemini access
 ```bash
 make check-gemini
 ```
 
-### Step 5 - Build the vector store
+### 5️⃣ Build the vector store
 ```bash
 make refresh
 ```
 
-### Step 6 - Start chatting
+### 6️⃣ Start chatting
 **CLI version**
 ```bash
 make chat
@@ -130,7 +132,7 @@ Then open the Streamlit URL (usually `http://localhost:8501`) to start chatting 
 
 
 ---
-## Project Structure
+## 📚 Project Structure
 
 ```
 ChatDocs/
@@ -152,7 +154,7 @@ ChatDocs/
 
 ---
 
-## Future Enhancements
+## 🧠 Future Enhancements
 
 - Multi-source documentation support (adding source code)
 - Deployment to Streamlit Cloud / Hugging Face Spaces  
@@ -161,7 +163,7 @@ ChatDocs/
 ---
 
 
-## Author
+### 👋 Author
 
 *Jeanne Endres* - 
 Data Science & Software Engineer  
